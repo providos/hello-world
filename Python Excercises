@@ -1,0 +1,14 @@
+print("hello worlld")
+print("This is me creating a script file for python")
+# a script file is a file that contains python code which later on may be called from a shell 
+
+# in order to interchange the values of two variables, we can use the followinf code
+# first we declare the variables
+x, y = 10, 20
+
+# now we swap the values
+x, y = y, x
+
+# to see the results we simply print x and y
+
+print (x, y)
