@@ -1,0 +1,17 @@
+# Create a function that finds the maximum number out of three values
+# We can create a first function to find the max number out of two values
+
+# We define a function with "def" + the name of the function + (what goes in the parentheses are the input values)
+def max_of_2(x, y):
+    if x > y: # We start by asking if the first value "x" is greater than the value "y"
+        return x # If so, we return the value "x" out of the function
+    return y # Else, we return the value of "y"
+
+# Now that we have a function that can identify the max number out of two values we can implement it in another function and use the same analogy
+# We create a new function that takes 3 values, and we call the function (max_of_2) to compare inside this new function
+
+def max_of_3(x, y, z): # We create a function that takes 3 values
+    return max_of_2(x, max_of_2(y, z)) # The function returns the value of the output of the (max_of_2) function, which at the same time takes 
+    #the first value "x" and the max number out of (y, z) that are calculated in the max_of_2 function    
+    
+print(max_of_3(1, 3, 8))
